@@ -1,14 +1,10 @@
-# Core runtime for the official TRIBE v2 package
-# The upstream project supports Python >= 3.11.
-torch>=2.5,<2.7
-numpy
-pandas
+# Core packages for the playground.
+# The official TRIBE v2 package itself pins the rest of its runtime dependencies.
+torch>=2.5.1,<2.7
+numpy==2.2.6
+torchvision>=0.20,<0.22
 matplotlib
-tqdm
-ffmpeg-python
+pandas
 
-# Install the official package directly from GitHub
+# Official Meta Research TRIBE v2 package
 git+https://github.com/facebookresearch/tribev2.git
-
-# Optional brain visualization dependencies from the upstream package:
-# pip install -e "git+https://github.com/facebookresearch/tribev2.git#egg=tribev2[plotting]"
